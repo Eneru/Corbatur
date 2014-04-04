@@ -14,7 +14,7 @@
    <string>Corbatür</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QGroupBox" name="groupBox">
+   <widget class="QGroupBox" name="groupBoxContacts">
     <property name="geometry">
      <rect>
       <x>440</x>
@@ -26,7 +26,7 @@
     <property name="title">
      <string>Contacts/Groupes</string>
     </property>
-    <widget class="QListWidget" name="listWidget">
+    <widget class="QListWidget" name="listeContacts">
      <property name="enabled">
       <bool>true</bool>
      </property>
@@ -61,7 +61,7 @@
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
     </property>
-    <widget class="QTextEdit" name="textEdit">
+    <widget class="QTextEdit" name="ecritureDiscussion">
      <property name="cursor" stdset="0">
       <cursorShape>IBeamCursor</cursorShape>
      </property>
@@ -72,7 +72,7 @@
       <enum>QFrame::Sunken</enum>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="bouttonEnvoie">
      <property name="text">
       <string>Envoyer</string>
      </property>
@@ -80,6 +80,48 @@
       <string>Shift+Return</string>
      </property>
     </widget>
+   </widget>
+   <widget class="QTextEdit" name="LectureDiscussion">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>421</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="smiley">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Smiley</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="wizz">
+    <property name="geometry">
+     <rect>
+      <x>394</x>
+      <y>210</y>
+      <width>31</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>WIZZ</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -95,21 +137,21 @@
     <property name="title">
      <string>Fichier</string>
     </property>
-    <addaction name="actionModifier_son_propre_contact"/>
+    <addaction name="ModifProfil"/>
     <addaction name="separator"/>
-    <addaction name="actionAjouter_un_contact"/>
-    <addaction name="actionSupprimer_un_contact"/>
+    <addaction name="ajoutContact"/>
+    <addaction name="SuppressionContact"/>
     <addaction name="separator"/>
-    <addaction name="actionAjouter_un_groupe"/>
-    <addaction name="actionSupprimer_un_groupe"/>
+    <addaction name="ajoutGroupe"/>
+    <addaction name="SuppressionGroupe"/>
     <addaction name="separator"/>
-    <addaction name="actionQuitter"/>
+    <addaction name="MenuQuit"/>
    </widget>
    <widget class="QMenu" name="menuAide">
     <property name="title">
      <string>Aide</string>
     </property>
-    <addaction name="action_propos_de_Corbatur"/>
+    <addaction name="aideCorbatur"/>
    </widget>
    <addaction name="menuFichier"/>
    <addaction name="menuAide"/>
@@ -123,32 +165,32 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="actionAjouter_un_groupe">
+  <action name="ajoutGroupe">
    <property name="text">
     <string>Ajouter un groupe</string>
    </property>
   </action>
-  <action name="actionAjouter_un_contact">
+  <action name="ajoutContact">
    <property name="text">
     <string>Ajouter un contact</string>
    </property>
   </action>
-  <action name="actionModifier_son_propre_contact">
+  <action name="ModifProfil">
    <property name="text">
     <string>Modifier le profil</string>
    </property>
   </action>
-  <action name="actionSupprimer_un_groupe">
+  <action name="SuppressionGroupe">
    <property name="text">
     <string>Supprimer un groupe</string>
    </property>
   </action>
-  <action name="actionSupprimer_un_contact">
+  <action name="SuppressionContact">
    <property name="text">
     <string>Supprimer un contact</string>
    </property>
   </action>
-  <action name="actionQuitter">
+  <action name="MenuQuit">
    <property name="text">
     <string>Quitter</string>
    </property>
@@ -156,7 +198,7 @@
     <string>Ctrl+Q</string>
    </property>
   </action>
-  <action name="action_propos_de_Corbatur">
+  <action name="aideCorbatur">
    <property name="text">
     <string>À propos de Corbatur</string>
    </property>
