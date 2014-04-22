@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SuppressionPersonneDialog</class>
+ <widget class="QDialog" name="SuppressionPersonneDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>238</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Suppression de contacts</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>357</width>
+     <height>219</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="mainLayoutsuppcontact">
+    <item>
+     <layout class="QVBoxLayout" name="listContactLayout">
+      <item>
+       <widget class="QLabel" name="listSupprlabel">
+        <property name="text">
+         <string>Liste de contacts</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="listPersonneSuppr">
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="buttonsupprContactlayout">
+      <item>
+       <widget class="QPushButton" name="supprcontactButton">
+        <property name="text">
+         <string>Supprimer</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="fermerSupprContact">
+        <property name="text">
+         <string>Fermer</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

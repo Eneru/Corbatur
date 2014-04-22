@@ -97,25 +97,12 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="smiley">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>210</y>
-      <width>31</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Smiley</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="wizz">
     <property name="geometry">
      <rect>
-      <x>394</x>
+      <x>384</x>
       <y>210</y>
-      <width>31</width>
+      <width>41</width>
       <height>27</height>
      </rect>
     </property>
@@ -130,7 +117,7 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFichier">
@@ -139,11 +126,11 @@
     </property>
     <addaction name="ModifProfil"/>
     <addaction name="separator"/>
-    <addaction name="ajoutContact"/>
+    <addaction name="AjoutContact"/>
     <addaction name="SuppressionContact"/>
     <addaction name="separator"/>
-    <addaction name="ajoutGroupe"/>
-    <addaction name="SuppressionGroupe"/>
+    <addaction name="CreerGroup"/>
+    <addaction name="ModifGroup"/>
     <addaction name="separator"/>
     <addaction name="MenuQuit"/>
    </widget>
@@ -152,6 +139,7 @@
      <string>Aide</string>
     </property>
     <addaction name="aideCorbatur"/>
+    <addaction name="version"/>
    </widget>
    <addaction name="menuFichier"/>
    <addaction name="menuAide"/>
@@ -165,19 +153,28 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="ajoutGroupe">
+  <action name="AjoutPersonneGroupe">
    <property name="text">
-    <string>Ajouter un groupe</string>
+    <string>Ajouter un contact à un groupe</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+A</string>
    </property>
   </action>
-  <action name="ajoutContact">
+  <action name="AjoutContact">
    <property name="text">
     <string>Ajouter un contact</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
    </property>
   </action>
   <action name="ModifProfil">
    <property name="text">
     <string>Modifier le profil</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
    </property>
   </action>
   <action name="SuppressionGroupe">
@@ -188,6 +185,9 @@
   <action name="SuppressionContact">
    <property name="text">
     <string>Supprimer un contact</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
    </property>
   </action>
   <action name="MenuQuit">
@@ -202,9 +202,61 @@
    <property name="text">
     <string>À propos de Corbatur</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+?</string>
+   </property>
+  </action>
+  <action name="version">
+   <property name="text">
+    <string>Version</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="CreerGroup">
+   <property name="text">
+    <string>Créer un groupe</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="supprContactGroup">
+   <property name="text">
+    <string>Supprimer des contacts dans un groupe</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="ModifGroup">
+   <property name="text">
+    <string>Modifier un groupe</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+M</string>
+   </property>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>MenuQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

@@ -9,8 +9,29 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    modifprofildialog.cpp \
+    versiondialog.cpp \
+    ajoutdialog.cpp \
+    suppressionpersonnedialog.cpp \
+    creategroupdialog.cpp \
+    selectionmodifgroupdialog.cpp \
+    modifgroupdialog.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    modifprofildialog.h \
+    versiondialog.h \
+    ajoutdialog.h \
+    suppressionpersonnedialog.h \
+    creategroupdialog.h \
+    selectionmodifgroupdialog.h \
+    modifgroupdialog.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    modifprofildialog.ui \
+    versiondialog.ui \
+    ajoutdialog.ui \
+    suppressionpersonnedialog.ui \
+    creategroupdialog.ui \
+    selectionmodifgroupdialog.ui \
+    modifgroupdialog.ui
