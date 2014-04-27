@@ -16,7 +16,7 @@
   <property name="windowTitle">
    <string>Version</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -68,7 +68,7 @@
    <sender>validerVersion</sender>
    <signal>clicked()</signal>
    <receiver>VersionDialog</receiver>
-   <slot>reject()</slot>
+   <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>225</x>

@@ -16,7 +16,7 @@
   <property name="windowTitle">
    <string>Création d'un groupe</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -200,22 +200,6 @@
    <hints>
     <hint type="sourcelabel">
      <x>228</x>
-     <y>403</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>298</x>
-     <y>231</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>creergroupbutton</sender>
-   <signal>clicked()</signal>
-   <receiver>CreateGroupDialog</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>88</x>
      <y>403</y>
     </hint>
     <hint type="destinationlabel">

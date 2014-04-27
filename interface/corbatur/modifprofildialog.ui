@@ -28,7 +28,7 @@
   <property name="modal">
    <bool>false</bool>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -107,22 +107,6 @@
  </widget>
  <resources/>
  <connections>
-  <connection>
-   <sender>appliquerModifButton</sender>
-   <signal>clicked()</signal>
-   <receiver>ModifProfilDialog</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>123</x>
-     <y>204</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>199</x>
-     <y>149</y>
-    </hint>
-   </hints>
-  </connection>
   <connection>
    <sender>annulerModifButton</sender>
    <signal>clicked()</signal>

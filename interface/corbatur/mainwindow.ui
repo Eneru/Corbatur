@@ -73,6 +73,9 @@
      </property>
     </widget>
     <widget class="QPushButton" name="bouttonEnvoie">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="text">
       <string>Envoyer</string>
      </property>
@@ -124,22 +127,22 @@
     <property name="title">
      <string>Fichier</string>
     </property>
-    <addaction name="ModifProfil"/>
+    <addaction name="actionModifProfil"/>
     <addaction name="separator"/>
-    <addaction name="AjoutContact"/>
-    <addaction name="SuppressionContact"/>
+    <addaction name="actionAjoutContact"/>
+    <addaction name="actionSuppressionContact"/>
     <addaction name="separator"/>
-    <addaction name="CreerGroup"/>
-    <addaction name="ModifGroup"/>
+    <addaction name="actionCreerGroup"/>
+    <addaction name="actionModifGroup"/>
     <addaction name="separator"/>
-    <addaction name="MenuQuit"/>
+    <addaction name="actionMenuQuit"/>
    </widget>
    <widget class="QMenu" name="menuAide">
     <property name="title">
      <string>Aide</string>
     </property>
-    <addaction name="aideCorbatur"/>
-    <addaction name="version"/>
+    <addaction name="actionaideCorbatur"/>
+    <addaction name="actionVersion"/>
    </widget>
    <addaction name="menuFichier"/>
    <addaction name="menuAide"/>
@@ -161,7 +164,7 @@
     <string>Ctrl+Shift+A</string>
    </property>
   </action>
-  <action name="AjoutContact">
+  <action name="actionAjoutContact">
    <property name="text">
     <string>Ajouter un contact</string>
    </property>
@@ -169,7 +172,7 @@
     <string>Ctrl+A</string>
    </property>
   </action>
-  <action name="ModifProfil">
+  <action name="actionModifProfil">
    <property name="text">
     <string>Modifier le profil</string>
    </property>
@@ -182,7 +185,7 @@
     <string>Supprimer un groupe</string>
    </property>
   </action>
-  <action name="SuppressionContact">
+  <action name="actionSuppressionContact">
    <property name="text">
     <string>Supprimer un contact</string>
    </property>
@@ -190,7 +193,7 @@
     <string>Ctrl+S</string>
    </property>
   </action>
-  <action name="MenuQuit">
+  <action name="actionMenuQuit">
    <property name="text">
     <string>Quitter</string>
    </property>
@@ -198,7 +201,7 @@
     <string>Ctrl+Q</string>
    </property>
   </action>
-  <action name="aideCorbatur">
+  <action name="actionaideCorbatur">
    <property name="text">
     <string>À propos de Corbatur</string>
    </property>
@@ -206,7 +209,7 @@
     <string>Ctrl+?</string>
    </property>
   </action>
-  <action name="version">
+  <action name="actionVersion">
    <property name="text">
     <string>Version</string>
    </property>
@@ -214,7 +217,7 @@
     <string>Ctrl+V</string>
    </property>
   </action>
-  <action name="CreerGroup">
+  <action name="actionCreerGroup">
    <property name="text">
     <string>Créer un groupe</string>
    </property>
@@ -230,7 +233,7 @@
     <string>Ctrl+Shift+S</string>
    </property>
   </action>
-  <action name="ModifGroup">
+  <action name="actionModifGroup">
    <property name="text">
     <string>Modifier un groupe</string>
    </property>
@@ -243,7 +246,7 @@
  <resources/>
  <connections>
   <connection>
-   <sender>MenuQuit</sender>
+   <sender>actionMenuQuit</sender>
    <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
    <slot>close()</slot>

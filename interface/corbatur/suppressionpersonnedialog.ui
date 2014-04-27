@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Suppression de contacts</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -63,5 +63,22 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>fermerSupprContact</sender>
+   <signal>clicked()</signal>
+   <receiver>SuppressionPersonneDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>160</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>118</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

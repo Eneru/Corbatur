@@ -166,22 +166,6 @@
  <resources/>
  <connections>
   <connection>
-   <sender>appliquerModifG</sender>
-   <signal>clicked()</signal>
-   <receiver>ModifGroupDialog</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>174</x>
-     <y>395</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>295</x>
-     <y>220</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>annulerModifG</sender>
    <signal>clicked()</signal>
    <receiver>ModifGroupDialog</receiver>
